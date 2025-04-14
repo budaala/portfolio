@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-normal: "Roboto", sans-serif;
+  --font-header: "Outfit", sans-serif;
+  --color-primary: #6320ee;
+  --color-secondary: #8075ff;
+  --color-background: #05041e;
+  --color-white: #f8f0fb;
+  --color-red: #ff4d4d;
+  --color-green: #4dff4d;
+  --gradient-primary: linear-gradient(109.46deg, #05041e, #6320ee);
+}
+
+body {
+  @apply bg-background text-white font-normal;
+}
+
+@layer base {
+  section {
+    @apply mx-5 sm:mx-10 lg:mx-20 xl:mx-40 2xl:mx-60 mt-30 flex justify-center items-center flex-col;
+  }
+  h1 {
+    @apply text-[min(10vw,70px)] md:text-6xl font-header font-extrabold mb-1 tracking-widest leading-tight;
+  }
+  h2 {
+    @apply text-2xl md:text-4xl font-header font-bold mb-4 text-center tracking-widest;
+  }
+  h2 .highlight {
+    @apply bg-gradient-to-r from-secondary to-primary text-transparent bg-clip-text;
+  }
+  h3 {
+    @apply text-2xl md:text-4xl font-header font-bold mb-4 tracking-wider;
+  }
+  h4 {
+    @apply text-xl md:text-3xl font-header font-bold mb-4;
+  }
+  .subtitle {
+    @apply text-lg mb-4 italic font-header font-extralight text-gray-300;
+  }
+  .subheader {
+    @apply text-sm font-header font-medium mb-1 tracking-wider text-gray-600;
+  }
+  p {
+    @apply text-lg mb-4 font-light font-normal leading-5;
+  }
+  .bullet-point {
+    @apply text-secondary;
+  }
+  .work-title {
+    @apply text-xl md:text-2xl font-header font-medium mb-4 tracking-wide;
+  }
+  .call-to-action {
+    @apply text-[min(5vw,45px)] font-header font-extrabold mb-3 tracking-widest leading-tight;
+  }
+}
+
+@layer components {
+  /* buttons */
+  .btn {
+    @apply button-text py-3 px-10 rounded-4xl transition duration-300 ease-in-out;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary;
+  }
+  .btn-primary {
+    @apply bg-background border-primary border-1 drop-shadow-primary;
+    @apply hover:bg-primary hover:text-white hover:border-white;
+    @apply active:bg-primary active:text-white active:border-primary;
+  }
+  .btn-secondary {
+    @apply bg-primary border-primary shadow-2xl drop-shadow-primary border-1;
+    @apply hover:bg-background hover:text-white hover:border-white;
+    @apply active:bg-background active:text-white active:border-primary;
+  }
+
+  /* navbar */
+  .navbar {
+    @apply box-border border shadow-[0px_0px_19.7px_-7px_#6320EE] rounded-[10px] border-solid border-primary bg-background flex items-center justify-center px-[4vw] py-4;
+    background: linear-gradient(109.46deg, #05041e 29.13%, #6320ee 254.93%);
+  }
+  .navbar-item {
+    @apply text-white font-header font-bold text-xl leading-[24px] px-4;
+    @apply hover:text-primary transition duration-300 ease-in-out;
+  }
+  .navbar-item:focus,
+  .nabar-item:active {
+    @apply text-primary font-header font-bold text-xl leading-[24px] px-4;
+  }
+
+  /* projects */
+  .technology {
+    @apply flex flex-row items-center px-4 py-1 gap-2;
+    @apply h-7 w-fit;
+    @apply bg-[rgba(248,240,251,0.13)] border-[1px] border-[rgba(248,240,251,0.27)] border-solid rounded-[10px];
+    @apply text-gray-400 font-normal;
+  }
+  .project-content {
+    @apply w-3xl mt-3 flex flex-col;
+  }
+  .project-image-container {
+    @apply flex items-center justify-center w-full mr-5;
+    @apply bg-[rgba(99,32,238,0.25)] border-[1px] border-[rgba(99,32,238,0.25)] shadow-[0px_4px_14px_#6320EE] rounded-3xl;
+  }
+  .project-image {
+    @apply p-2 rounded-3xl;
+    @apply object-cover w-full h-full;
+    @apply transition duration-300 ease-in-out;
+  }
+  .project-image:hover {
+    @apply scale-105;
+  }
+
+  /* work */
+  .work-item {
+    @apply flex flex-col lg:flex-row justify-center items-center gap-4 w-[45%] h-50 p-4 m-3 shadow-lg;
+    @apply bg-[rgba(99,32,238,0.25)] border-[1px] border-[rgba(99,32,238,0.25)] shadow-[0px_4px_14px_#6320EE] rounded-3xl;
+  }
+
+  /* contact */
+  .contact-item {
+    @apply flex flex-row items-center gap-4;
+  }
+
+  .contact-icon-container {
+    @apply flex justify-center items-center text-4xl bg-[rgba(99,32,238,0.25)] border-[1px] border-[rgba(99,32,238,0.25)] shadow-[0px_4px_14px_#6320EE] rounded-4xl p-3;
+  }
+  
+  .contact-icon:hover {
+    @apply text-primary;
+    @apply transition duration-300 ease-in-out;
+  }
+
+  .contact-details {
+    @apply mt-4 text-lg font-header font-bold text-gray-300;
+  }
+
+  .input-label {
+    @apply block mb-1 font-header font-bold ; 
+  }
+
+  .input-field {
+    @apply w-full h-12 px-3 py-2 border border-primary rounded-2xl focus:outline-none focus:ring-2 focus:ring-secondary;
+    @apply transition duration-300 ease-in-out;
+  }
+
+  .invalid-input {
+    @apply border-red focus:ring-red focus:ring-2;
+    @apply transition duration-300 ease-in-out;
+  }
+
+  .invalid-input-message {
+    @apply text-red text-sm mt-1;
+  }
+
+  .success-message {
+    @apply text-green text-sm mt-1 text-center;
+  }
+}
+
+@utility button-text {
+  @apply text-white font-header font-bold text-center;
+}
