@@ -7,6 +7,8 @@ I also built a custom backend using Node.js and Express to handle the contact fo
 
 The goal of this project was not only to present my work but to reflect my approach to code: minimalistic, elegant, and crafted with attention to detail.
 
+link: [Alicja Buda | Portfolio](https://alicjabuda.vercel.app/)
+
 ---
 
 ## ✨ What you'll find here
@@ -69,5 +71,3 @@ MAIL_PASS=your_generated_app_password
 
 Want to collaborate or just say hi?
 Reach me at: alicjabuda@protonmail.com
-
-Or visit [my website]()
