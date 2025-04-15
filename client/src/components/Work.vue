@@ -11,16 +11,20 @@ defineProps({
     icon: {
         type: String,
         required: true
+    },
+    index: {
+        type: Number,
+        required: true
     }
 });
 </script>
 
 <template>
-    <div class="work-item">
-        <div class="w-1/3">
+    <div class="work-item" :class="index % 2 === 0 ? 'sm:flex-row' : 'sm:flex-row-reverse'">
+        <div>
             <img :src="icon" alt="Work icon" class="work-icon" />
         </div>
-        <div class="w-2/3 space-y-2">
+        <div>
             <h3 class="work-title">{{ position }}</h3>
             <p>{{ description }}</p>
         </div>

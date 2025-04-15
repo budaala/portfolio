@@ -26,11 +26,11 @@ const works = ref([
 
 <template>
     <section id="work" class="mt-20">
-        <div class="container mx-auto">
+        <div class="container">
             <h2>Work <span class="highlight">Experience</span></h2>
-            <div class="flex flex-wrap justify-center space-x-5 space-y-3 mt-10">
-                <Work v-for="work in works" :position="work.position" :icon="work.icon"
-                    :description="work.description" />
+            <div class="flex flex-wrap justify-center gap-3 mt-10" style="grid-auto-rows: 1fr;">
+                <Work v-for="(work, index) in works" :position="work.position" :icon="work.icon"
+                    :description="work.description" :index="index" />
             </div>
         </div>
     </section>
