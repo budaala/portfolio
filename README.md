@@ -1,7 +1,11 @@
 # 🧑‍💻 Portfolio – Alicja Buda
 
-Welcome to my personal portfolio!  
-Here I showcase some of the projects I've built as a frontend & fullstack developer, focusing on intuitive UI, elegant interactions, and attention to detail.
+This is my personal developer portfolio – a space to highlight my favorite projects, technical skills, and passion for building thoughtful digital experiences.
+
+The site was designed in Figma and built with Vue 3 and Tailwind CSS, with an emphasis on clean layout, strong UI/UX and responsive design.
+I also built a custom backend using Node.js and Express to handle the contact form securely, allowing visitors to reach out directly.
+
+The goal of this project was not only to present my work but to reflect my approach to code: minimalistic, elegant, and crafted with attention to detail.
 
 ---
 
@@ -52,3 +56,18 @@ npm run dev
 cd ../api
 npm install
 node index.js
+```
+Make sure to create a .env file in /api with your email credentials:
+```bash
+MAIL_USER=your@email.com
+MAIL_PASS=your_generated_app_password
+```
+
+---
+
+## 📫 Contact
+
+Want to collaborate or just say hi?
+Reach me at: alicjabuda@protonmail.com
+
+Or visit [my website]()
