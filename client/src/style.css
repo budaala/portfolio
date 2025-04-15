@@ -179,6 +179,7 @@ html {
     @apply text-green text-sm mt-1 text-center;
   }
 
+  /* blobs */
 
   .scroll-blob {
     @apply fixed w-[300px] h-[300px] md:w-[500px] md:h-[500px] blur-[250px] md:blur-[255px] rounded-full pointer-events-none z-[-1] -translate-x-1/2 -translate-y-1/2 transition-transform duration-200 ease-out;
