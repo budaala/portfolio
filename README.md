@@ -1,7 +1,7 @@
 # 🧑‍💻 Portfolio – Alicja Buda
 
 Welcome to my personal portfolio!  
-Here I showcase some of the projects I've built as a frontend & fullstack developer, focusing on intuitive UI, elegant interactions, and attention to detail.
+Here I showcase some of the projects I've built as a fullstack developer, focusing on intuitive UI, elegant interactions, and attention to detail.
 
 ---
 
@@ -52,3 +52,18 @@ npm run dev
 cd ../api
 npm install
 node index.js
+```
+Make sure to create a .env file in /api with your email credentials:
+```bash
+MAIL_USER=your@email.com
+MAIL_PASS=your_generated_app_password
+```
+
+---
+
+## 📫 Contact
+
+Want to collaborate or just say hi?
+Reach me at: alicjabuda@protonmail.com
+
+Or visit [my website]()
