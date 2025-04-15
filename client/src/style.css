@@ -15,7 +15,11 @@
 }
 
 body {
-  @apply bg-background text-white font-normal;
+  @apply bg-background text-white font-normal overflow-x-hidden;
+  
+}
+html {
+  @apply scroll-smooth overflow-x-hidden;
 }
 
 @layer base {
@@ -99,6 +103,10 @@ body {
     @apply bg-[rgba(248,240,251,0.13)] border-[1px] border-[rgba(248,240,251,0.27)] border-solid rounded-[10px];
     @apply text-gray-400 font-normal;
   }
+  .technology:hover {
+    @apply text-white border-white cursor-auto;
+    @apply transition duration-300 ease-in-out;
+  }
   .project-content {
     @apply w-full lg:w-[50vw] mt-3 flex flex-col;
   }
@@ -122,6 +130,11 @@ body {
     @apply bg-[rgba(99,32,238,0.25)] border-[1px] border-[rgba(99,32,238,0.25)] shadow-[0px_4px_14px_#6320EE] rounded-3xl;
   }
 
+  .work-item:hover {
+    @apply scale-105;
+    @apply transition duration-300 ease-in-out;
+  }
+
   .work-icon {
     @apply min-w-30 h-full flex justify-center items-center;
   }
@@ -132,7 +145,7 @@ body {
   }
 
   .contact-icon-container {
-    @apply flex justify-center items-center text-4xl bg-[rgba(99,32,238,0.25)] border-[1px] border-[rgba(99,32,238,0.25)] shadow-[0px_4px_14px_#6320EE] rounded-4xl p-3;
+    @apply flex justify-center items-center text-4xl bg-[rgba(99,32,238,0.25)] border-[1px] border-[rgba(99,32,238,0.25)] shadow-[0px_4px_14px_#6320EE] rounded-full p-3;
   }
   
   .contact-icon:hover {
@@ -164,6 +177,23 @@ body {
 
   .success-message {
     @apply text-green text-sm mt-1 text-center;
+  }
+
+
+  .scroll-blob {
+    @apply fixed w-[300px] h-[300px] md:w-[500px] md:h-[500px] blur-[250px] md:blur-[255px] rounded-full pointer-events-none z-[-1] -translate-x-1/2 -translate-y-1/2 transition-transform duration-200 ease-out;
+  }
+
+  .scroll-blob-1 {
+@apply bg-primary opacity-70;
+  }
+
+  .scroll-blob-2 {
+    @apply bg-secondary top-[50%] right-[0%] translate-x-1/2 translate-y-1/2 opacity-50;
+  }
+
+  footer {
+    @apply mt-30 text-sm;
   }
 }
 
