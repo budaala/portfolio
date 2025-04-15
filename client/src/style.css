@@ -20,7 +20,7 @@ body {
 
 @layer base {
   section {
-    @apply mx-5 sm:mx-10 lg:mx-20 xl:mx-40 2xl:mx-60 mt-30 flex justify-center items-center flex-col;
+    @apply mx-auto mt-30 max-w-400 flex justify-center items-center flex-col;
   }
   h1 {
     @apply text-[min(10vw,70px)] md:text-6xl font-header font-extrabold mb-1 tracking-widest leading-tight;
@@ -58,19 +58,23 @@ body {
 }
 
 @layer components {
+  .container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
   /* buttons */
   .btn {
-    @apply button-text py-3 px-10 rounded-4xl transition duration-300 ease-in-out;
-    @apply focus:outline-none focus:ring-2 focus:ring-primary;
+    @apply button-text py-3 px-10 rounded-4xl ring-primary ring-1 shadow-[0px_4px_14px_#6320EE] transition duration-300 ease-in-out;
+    @apply focus:outline-none focus:ring-2 focus:ring-white;
   }
   .btn-primary {
-    @apply bg-background border-primary border-1 drop-shadow-primary;
-    @apply hover:bg-primary hover:text-white hover:border-white;
+    @apply bg-background border-primary;
+    @apply hover:text-white hover:border-white hover:ring-2 hover:ring-white hover:shadow-[0px_4px_14px_#f8f0fb];
     @apply active:bg-primary active:text-white active:border-primary;
   }
   .btn-secondary {
-    @apply bg-primary border-primary shadow-2xl drop-shadow-primary border-1;
-    @apply hover:bg-background hover:text-white hover:border-white;
+    @apply bg-secondary border-white ring-0 shadow-none;
+    @apply hover:bg-background hover:text-white hover:border-secondary hover:ring-2 hover:ring-secondary hover:shadow-[0px_4px_14px_#8075ff];
     @apply active:bg-background active:text-white active:border-primary;
   }
 
@@ -90,13 +94,13 @@ body {
 
   /* projects */
   .technology {
-    @apply flex flex-row items-center px-4 py-1 gap-2;
-    @apply h-7 w-fit;
+    @apply flex flex-col sm:flex-row items-center px-4 py-1 gap-2;
+    @apply h-fit w-fit sm:h-7;
     @apply bg-[rgba(248,240,251,0.13)] border-[1px] border-[rgba(248,240,251,0.27)] border-solid rounded-[10px];
     @apply text-gray-400 font-normal;
   }
   .project-content {
-    @apply w-3xl mt-3 flex flex-col;
+    @apply w-full lg:w-[50vw] mt-3 flex flex-col;
   }
   .project-image-container {
     @apply flex items-center justify-center w-full mr-5;
@@ -107,14 +111,19 @@ body {
     @apply object-cover w-full h-full;
     @apply transition duration-300 ease-in-out;
   }
-  .project-image:hover {
+  /* .project-image:hover {
     @apply scale-105;
-  }
+  } */
 
   /* work */
   .work-item {
-    @apply flex flex-col lg:flex-row justify-center items-center gap-4 w-[45%] h-50 p-4 m-3 shadow-lg;
+    @apply flex flex-col sm:flex-row items-center justify-center gap-4 p-2 sm:p-4 m-4;
+    @apply w-full sm:w-[50vw] lg:w-[40vw] xl:w-[30vw] 2xl:w-[25vw];
     @apply bg-[rgba(99,32,238,0.25)] border-[1px] border-[rgba(99,32,238,0.25)] shadow-[0px_4px_14px_#6320EE] rounded-3xl;
+  }
+
+  .work-icon {
+    @apply min-w-30 h-full flex justify-center items-center;
   }
 
   /* contact */

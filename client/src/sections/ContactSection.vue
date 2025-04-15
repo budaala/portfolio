@@ -4,22 +4,21 @@ import ContactForm from '../components/ContactForm.vue';
 
 <template>
     <section id="contact">
-        <div class="container mx-auto">
+        <div class="container">
             <h2>Let's <span class="highlight">
-                    get in touch
+                    Get In Touch
                 </span></h2>
-            <div class="flex flex-col md:flex-row gap-5 mt-10">
-                <div class="w-1/2 md:w-1/2">
-                    <h3 class="call-to-action">LOOKING FOR A DEVELOPER?</h3>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mt-10">
+                <div class="flex flex-col justify-center items-center">
+                    <h3 class="call-to-action text-center">LOOKING FOR A DEVELOPER?</h3>
                     <p class="mb-10">I'm just one message away.</p>
-                    <div class="flex flex-col gap-6">
+                    <div class="flex flex-col lg:flex-row justify-center gap-6">
                         <a class="contact-item" href="mailto:alicjabuda@protonmail.com">
                             <div class="contact-icon-container">
                                 <FontAwesomeIcon icon="fa-solid fa-envelope" class="contact-icon" />
                             </div>
                             <div class="contact-details">
                                 <h4 class="subheader">MAIL</h4>
-                                <p>alicjabuda@protonmail.com</p>
                             </div>
                         </a>
                         <a class="contact-item" href="https://www.linkedin.com/in/budaalicja/" target="_blank">
@@ -28,7 +27,6 @@ import ContactForm from '../components/ContactForm.vue';
                             </div>
                             <div class="contact-details">
                                 <h4 class="subheader">LINKEDIN</h4>
-                                <p>budaalicja</p>
                             </div>
                         </a>
                         <a class="contact-item" href="https://github.com/budaala" target="_blank">
@@ -37,12 +35,11 @@ import ContactForm from '../components/ContactForm.vue';
                             </div>
                             <div class="contact-details">
                                 <h4 class="subheader">GITHUB</h4>
-                                <p>budaala</p>
                             </div>
                         </a>
                     </div>
                 </div>
-                <div class="w-full md:w-1/2">
+                <div class="">
                     <ContactForm />
                 </div>
             </div>

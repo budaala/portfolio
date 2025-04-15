@@ -25,12 +25,17 @@ const props = defineProps({
     techStack: {
         type: Array,
         default: () => []
+    },
+    index: {
+        type: Number,
+        required: true
     }
 });
 </script>
 
 <template>
-    <div class="flex flex-col lg:flex-row justify-around gap-4 mb-15">
+    <div class="flex flex-col lg:flex-row justify-around gap-4 mb-15"
+        :class="index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'">
         <div class="project-image-container">
             <img :src="image" alt="Project image" class="project-image" />
         </div>
@@ -51,6 +56,10 @@ const props = defineProps({
                     <Technology :tech="tech"></Technology>
                 </li>
             </ul>
+            <a :href="link" target="_blank" class="btn btn-primary mt-4">
+                <FontAwesomeIcon icon="fa-solid fa-arrow-up-right-from-square" class="mr-2"></FontAwesomeIcon>
+                View Project
+            </a>
         </div>
     </div>
 </template>

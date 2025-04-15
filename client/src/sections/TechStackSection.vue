@@ -25,7 +25,7 @@ const techStack = ref([
 
 <template>
     <section id="tech-stack" class="mt-20">
-        <div class="container mx-auto">
+        <div class="container">
             <h2><span class="highlight">Tech</span> Stack</h2>
             <div class="flex flex-wrap justify-center mx-auto space-x-3 space-y-3 mt-10 w-[80%]">
                 <Technology v-for="tech in techStack" :key="tech" :tech="tech"></Technology>
