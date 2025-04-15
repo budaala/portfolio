@@ -12,7 +12,7 @@ import GitIcon from '@/assets/tech/Git.svg';
 import GitHubIcon from '@/assets/tech/GitHub.svg';
 import MSOfficeIcon from '@/assets/tech/MS Office.svg';
 import MSSQLServerIcon from '@/assets/tech/MS SQL Server.svg';
-import PlaywrightIcon from '@/assets/Playwright.svg';
+import PlaywrightIcon from '@/assets/tech/Playwright.svg';
 import TailwindCSSIcon from '@/assets/tech/Tailwind CSS.svg';
 import ViteIcon from '@/assets/tech/Vite.svg';
 import VuforiaStudioIcon from '@/assets/tech/Vuforia Studio.svg';
