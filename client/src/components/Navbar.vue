@@ -1,7 +1,7 @@
 <template>
     <nav class="flex items-center justify-center px-8 py-4 w-[92%] mx-auto text-white gap-[4vw]">
         <div class="hidden md:inline">
-            <img class="w-16" src="../assets/logo.svg" alt="logo"></img>
+            <img class="w-16" src="@/assets/logo.svg" alt="logo"></img>
         </div>
         <div class="navbar">
             <ul class="flex gap-[4vw]">

@@ -1,22 +1,25 @@
 <script setup>
+import fungeye from '@/assets/fungeye.png';
+import beehyve from '@/assets/beehyve.jpg';
+
 const projects = ref([
     {
         id: 1,
         title: '🍄‍🟫 FungEye',
         description: ["Developed the frontend of the project", "Implemented CRUD operations for managing data", "Managed authentication using JWT tokens", "Designed an intuitive and responsive user interface with attention to accessibility"],
-        image: 'src/assets/fungeye.png',
+        image: fungeye,
         link: 'https://github.com/Bakkonrad/FungEye',
         subtitle: 'MUSHROOM RECOGNITION APP',
-        techStack: ['Vue.js', 'Vuelidate', 'JavaScript', 'Bootstrap', 'HTML', 'CSS']
+        techStack: ['VueJS', 'Vuelidate', 'JavaScript', 'Bootstrap', 'HTML', 'CSS']
     },
     {
         id: 2,
         title: '🐝 Beehyve',
         description: ['Integrated live data retrieval and displayed it within the AR experience', 'Visualized temperature variations inside the hive, using color indicators to highlight areas with the highest bee activity', 'Designed interactive controls to toggle data visibility', 'Implemented charts to showcase measurement trends over time'],
-        image: 'src/assets/beehyve.jpg',
+        image: beehyve,
         link: 'https://www.plcnext-community.net/bee-projects/using-augmented-reality/',
         subtitle: 'AR BEE HIVE',
-        techStack: ['AngularJS', 'Vuforia Studio', 'CSS']
+        techStack: ['AngularJS', 'VuforiaStudio', 'CSS']
     }
 ]);
 import { ref } from 'vue';

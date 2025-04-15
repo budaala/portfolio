@@ -2,24 +2,24 @@
 import Technology from '../components/Technology.vue';
 import { ref } from 'vue';
 const techStack = ref([
-    'Vue.js',
+    'VueJS',
     'Vuelidate',
     'JavaScript',
     'Bootstrap',
     'HTML',
     'CSS',
     'AngularJS',
-    'Vuforia Studio',
+    'VuforiaStudio',
     'CSharp',
     'DOTNET',
-    'MS SQL Server',
+    'MSSQLServer',
     'Figma',
     'Git',
     'GitHub',
-    'MS Office',
+    'MSOffice',
     'Playwright',
     'Vite',
-    'Tailwind CSS'
+    'TailwindCSS'
 ]);
 </script>
 

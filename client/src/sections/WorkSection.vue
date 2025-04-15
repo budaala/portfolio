@@ -1,5 +1,8 @@
 <script setup>
 import Work from '../components/Work.vue';
+import FullStackDeveloper from '@/assets/illustrations/FullStackDeveloper.svg';
+import ARFrontendDeveloper from '@/assets/illustrations/ARFrontendDeveloper.svg';
+import Intern from '@/assets/illustrations/Intern.svg';
 import { ref } from 'vue';
 
 const works = ref([
@@ -7,19 +10,19 @@ const works = ref([
         id: 1,
         position: 'Full Stack Developer',
         description: "Assisted in the development of a web app using Vue.js and Vuelidate. Created API endpoints in C# .NET and worked with MS SQL Server databases.",
-        icon: 'src/assets/illustrations/FullStackDeveloper.svg'
+        icon: FullStackDeveloper
     },
     {
         id: 2,
         position: 'AR Frontend Developer',
         description: "Developed AR experiences using Vuforia Studio and AngularJS, working with 3D models, live API data.",
-        icon: 'src/assets/illustrations/ARFrontendDeveloper.svg'
+        icon: ARFrontendDeveloper
     },
     {
         id: 3,
         position: 'Intern',
         description: "Learned the fundamentals of C# .NET, SQL and computer networks.",
-        icon: 'src/assets/illustrations/Intern.svg'
+        icon: Intern
     }
 ]);
 </script>

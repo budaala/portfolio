@@ -16,7 +16,7 @@
                 </div>
             </div>
             <div class="flex items-center justify-center py-4 order-1 md:order-2">
-                <img src="../assets/profile-picture.svg" alt="Profile picture" class="h-50 sm:h-130 w-auto" />
+                <img src="@/assets/profile-picture.svg" alt="Profile picture" class="h-50 sm:h-130 w-auto" />
             </div>
         </div>
     </section>
